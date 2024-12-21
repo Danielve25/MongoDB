@@ -27,5 +27,6 @@ const recetaSchema = new mongoose.Schema({
     }
 });
 
+
 const Receta = mongoose.model('Receta', recetaSchema);
 export default Receta;

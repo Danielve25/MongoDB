@@ -24,6 +24,7 @@ const actualizarReceta = async (req, res) => {
     }
 }
 
+
 const borrarReceta = async (req, res) => {
     try {
     const recetaEliminada = await Receta.findByIdAndDelete(req.params.id); 
