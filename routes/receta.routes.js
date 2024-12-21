@@ -11,4 +11,5 @@ router.patch('/recetas/:id', actualizarReceta);
 router.patch('/recetas/:id/inactivar', inactivarReceta);  
 router.delete('/recetas/:id', borrarReceta);
 
+
 export default router;
