@@ -1,4 +1,4 @@
-const express = require("express");
+import express from 'express';
 const {inactivarReceta, obtenerIdReceta, obtenerRecetas, borrarReceta, postRecetas, actualizarReceta} = require('../controllers/receta.controller');
 
 const router = express.Router();
@@ -11,4 +11,4 @@ router.patch('/recetas/:id', actualizarReceta);
 router.patch('/recetas/:id/inactivar', inactivarReceta);  
 router.delete('/recetas/:id', borrarReceta);
 
-module.exports = router;
+export default express;

@@ -1,15 +1,14 @@
 // Importar módulos
-
-import express from'express';
+import rutas from './routes/receta.routes.js';
+import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
-const Receta = require("./models/receta.model");
-const conect = require("./config/bd.js")
+import conect from './config/bd.js';
 // Inicializar la aplicación
 const app = express();
 const PORT = process.env.PORT || 4000;
-const rutas = require("./routes/receta.routes.js")
+dotenv.config();
 //Middleware 
 app.use(cors()); 
 app.use(express.json());
