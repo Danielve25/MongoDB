@@ -1,4 +1,4 @@
-const Receta = require("../models/receta.model");
+import Receta from '../models/receta.model.js';
 
 const postRecetas = async (req, res) => {
     try {
@@ -73,7 +73,7 @@ const inactivarReceta = async (req, res) => {
         res.status(500).json({ error: err.message });
     }
 }
-module.exports = {
+export {
     inactivarReceta, 
     obtenerIdReceta, 
     obtenerRecetas, 

@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 // Definir el esquema de Receta
 const recetaSchema = new mongoose.Schema({
     nombre: {
@@ -28,4 +28,4 @@ const recetaSchema = new mongoose.Schema({
 });
 
 const Receta = mongoose.model('Receta', recetaSchema);
-module.exports = Receta;
+export default Receta;

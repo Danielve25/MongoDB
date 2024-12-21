@@ -1,5 +1,5 @@
 import express from 'express';
-const {inactivarReceta, obtenerIdReceta, obtenerRecetas, borrarReceta, postRecetas, actualizarReceta} = require('../controllers/receta.controller');
+import {inactivarReceta, obtenerIdReceta, obtenerRecetas, borrarReceta, postRecetas, actualizarReceta} from '../controllers/receta.controller.js';
 
 const router = express.Router();
 
@@ -11,4 +11,4 @@ router.patch('/recetas/:id', actualizarReceta);
 router.patch('/recetas/:id/inactivar', inactivarReceta);  
 router.delete('/recetas/:id', borrarReceta);
 
-export default express;
+export default router;
